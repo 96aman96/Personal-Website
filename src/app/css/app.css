@@ -1057,8 +1057,8 @@ html, body {
 11. Main Footer
 ------------------------------------------------------------------- */
 .yb-main-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background: #0b549e;
   font-size: 0.7rem;
   text-align: center;
