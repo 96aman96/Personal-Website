@@ -146,9 +146,9 @@
     var $typed = $("#typed");
     if ($typed.length) {
       var typed = new Typed("#typed", {
-        strings: ["game developer", "designer", "web developer", "pianist"],
+        strings: ["game developer", "designer", "web developer", "coffee enthusiast"],
         loop: true,
-        typeSpeed: 70
+        typeSpeed: 65
       });
     }
   }
