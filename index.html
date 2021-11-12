@@ -955,6 +955,20 @@
     </div>
   </footer><!-- end main footer -->
   <script>
+    window.onload = function SetLooksOnLoad()
+    {
+      let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if(matched)
+      {
+        document.getElementById("DarkModeToggle").textContent="☀️";
+        $('body').addClass('yb-dark-skin');
+        $('body').addClass('uk-light');
+      }
+	    else
+      {
+        document.getElementById("DarkModeToggle").textContent="🌙";
+      }
+    }
     function ChangeLooks() {
       document.getElementById("body-app").classList.toggle("yb-dark-skin");
       document.getElementById("body-app").classList.toggle("uk-light");
