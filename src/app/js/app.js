@@ -63,10 +63,10 @@
       }
     }
   }
-
   function init_menu_toggle() {
     $(".yb-menu-togggle").on("click", function() {
       $("#body-app").toggleClass("yb-menu-open");
+      console.log("hello ji");
     });
 
     $("#btn-menu-toggle").on("click", function() {

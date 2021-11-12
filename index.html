@@ -16,6 +16,8 @@
 </head>
 
 <body id="body-app">
+  <script src="src/app/js/plugins.min.js"></script>
+  <script src="src/app/js/app.js"></script>
   <!-- class="yb-dark-skin uk-light" -->
   <!-- page loader -->
   <div id="pageloader" class="yb-pageloader-wrapper">
@@ -59,7 +61,7 @@
     <nav class="yb-main-menu " id="main-menu">
       <div class="uk-container" data-uk-navbar>
         <div class="uk-navbar-left">
-          <a class="yb-logo uk-navbar-item uk-logo" href="dark-index.html"><span>🌙</span></a>
+          <a class="yb-logo uk-navbar-item uk-logo" onclick="ChangeLooks()" id="DarkModeToggle"><span>🌙</span></a>
         </div>
         <div class="uk-navbar-right uk-hidden@m">
           <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
@@ -952,10 +954,22 @@
       </div>
     </div>
   </footer><!-- end main footer -->
-
+  <script>
+    function ChangeLooks() {
+      document.getElementById("body-app").classList.toggle("yb-dark-skin");
+      document.getElementById("body-app").classList.toggle("uk-light");
+      if(document.getElementById("DarkModeToggle").textContent.toString()=='☀️')
+      {
+        document.getElementById("DarkModeToggle").textContent="🌙";
+      }
+      else if(document.getElementById("DarkModeToggle").textContent.toString()=='🌙')
+      {
+        document.getElementById("DarkModeToggle").textContent="☀️";
+      }
+    }
+    </script>
   <!-- js -->
-  <script src="src/app/js/plugins.min.js"></script>
-  <script src="src/app/js/app.js"></script>
+
 </body>
 
 </html>
