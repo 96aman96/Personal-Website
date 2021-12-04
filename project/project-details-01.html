@@ -1,0 +1,114 @@
+<div class="uk-grid-collapse  uk--width-3-4 uk-animation-scale-down" data-uk-grid>
+  <!-- <div class="uk-background-cover uk-width-2-5@m  yb-full-height " data-uk-img data-src="src/img/work/01.jpg" >  </div> -->
+  <div class="uk-padding-large  uk-width-expand@m yb-full-height yb-full-height-fixed yb-work-content" >
+    <p><span class="yb-label uk-label uk-border-rounded">Games</span> </p>
+    <h1 class="yb-section-title">Bubble Gum Run!</h1> 
+    <hr> 
+    <!-- CONTENT GOES HERE -->
+    <div class="yb-blog-content">
+    <h3><strong>Overview:</strong></h3>
+
+              Bubble Gum Run! was the first unity project I made under my independent studio DeepMind Interactive. The game is runner game about a girl who is trying to dodge obstacles while trying to collect jars of bubblegum to increase the size of tbe bubble. The player can use the bubble to fly over obstalces&nbsp;and to get a multiplier score boost at the end.&nbsp;
+              <h3><strong>Roles:</strong></h3>
+              
+              <p>I wrote the code for the entire game which includes the code for</p>
+              
+              <ul>
+                <li>Flying</li>
+                <li>Running and player movement</li>
+                <li>Pickup and Obstacle Spawnning</li>
+              </ul>
+              
+              <p>I also integrated multiple analytics and ad network SDKs including but not limited to</p>
+              
+              <ul>
+                <li>Voodoo Analytics</li>
+                <li>Facebook Analytics</li>
+                <li>GameAnalytics</li>
+                <li>MoPub</li>
+                <li>AdMob</li>
+                <li>Google Ads</li>
+              </ul>
+              
+              <h3><strong>Learnings:</strong></h3>
+              
+              <p>I learnt a lot from this project including things like setting up player movement, Unity Rigidbody physics, handling mobile imput and a few other unity basics.</p>
+              
+              <h3><strong>Availability :</strong></h3>
+              
+              <p>The project is available on the Google Play Store and can be accessed using the button below.</p>
+              <a href='https://play.google.com/store/apps/details?id=com.DeepMindInteractive.BubbleGumRun'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class="storebutton"/></a>
+      
+    </div>    
+   </div>
+   <div class="uk-background-cover uk-width-1-4@m">
+    <h6 class="uk-text-bold uk-heading-line"><span>Image Gallery</span></h6>
+    <div data-uk-grid class="uk-child-width-1-1@m uk-child-width-1-2@s uk-child-width-1-1 uk-flex-center ">
+      <div>
+        <div class="slideshow-container ">
+
+          <div class="mySlides fade">
+            <img src="src/img/projects/BubbleGumRun/1.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="src/img/projects/BubbleGumRun/2.png">
+          </div>                    
+          <div class="mySlides fade">
+            <img src="src/img/projects/BubbleGumRun/3.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="src/img/projects/BubbleGumRun/4.png">
+          </div>
+          <div class="mySlides fade">
+            <img src="src/img/projects/BubbleGumRun/5.png">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000);
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
