@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    <!-- STEP 1: ENTER PROJECT NAME -->
+    Gear Switch Race 3D
+  </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="src/img/favicon.png" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+  <link rel="stylesheet" href="src/app/css/uikit-custom.min.css" />
+  <link rel="stylesheet" href="src/app/css/app.css" />
+</head>
+
+<body id="body-app">
+  <!-- page loader -->
+  <div id="pageloader" class="yb-pageloader-wrapper">
+    <div class="uk-position-center  uk-text-center">
+      <div data-uk-spinner></div>
+    </div>
+  </div><!-- end page loader -->
+  <!-- main header -->
+  <header class="yb-main-header" id="main-header">
+    <!-- main menu -->
+    <nav class="yb-main-menu " id="main-menu">
+      <div class="uk-container" data-uk-navbar>
+        <div class="uk-navbar-left">
+          <a class="yb-logo uk-navbar-item uk-logo" onclick="ChangeLooks()" id="DarkModeToggle"><span>🌙</span></a>
+        </div>
+        <div class="uk-navbar-right uk-hidden@m">
+          <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
+            <span data-uk-navbar-toggle-icon class="yb-icon-menu"></span>
+            <span data-uk-icon="close" class="yb-icon-close"></span>
+          </a>
+        </div>
+        <div class="yb-menu-toggle-wrapper" id="menucollapse">
+          <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 79 ">
+              <li>
+                <a class="yb-inner-link" href="#home"> Home </a>
+              </li>
+              <li>
+                <a class="yb-inner-link" href="#about"> About</a>
+              </li>
+              <li>
+                <a class="yb-inner-link" href="#resume"> Resume </a>
+              </li>
+              <li>
+                <a class="yb-inner-link" href="#portfolio"> Portfolio </a>
+              </li>
+              <li>
+                <a class="yb-inner-link" href="#contact"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav yb-social-icons">
+              <li>
+                <a href="https://www.github.com/96aman96" target="_blank">
+                  <span class="uk-icon " data-uk-icon="icon: github"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/-aman-kapoor" target="_blank">
+                  <span class="uk-icon" data-uk-icon="icon: linkedin"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/DropAPiano" target="_blank">
+                  <span class="uk-icon" data-uk-icon="icon: twitter"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav><!-- end main menu -->
+  </header><!-- end main header -->
+  <!-- main section -->
+  <main class="yb-main-content">
+    <section>
+      <div class="yb-section-point-wrapper">
+        <div class="uk-container">
+          <div class="yb-section-point">
+            <span>Project Outline</span>
+          </div>
+        </div>
+      </div>
+      <div class="uk-container">
+        <div data-uk-grid class="uk-grid-divider">
+          <div class="uk-width-2-3@m yb-section-padding">
+            <h1 class="yb-section-title">
+              <!-- StEP 1 B : UPDATE TITLE HERE AS WELL -->
+              Gear Switch Race 3D
+            </h1>
+            <!-- <div>
+              <img src="src/img/blog/01.jpg" alt="" class="yb-img-featured " />
+            </div> -->
+            <div class="uk-position-relative">
+              <div class="yb-blog-content yb-margin-bottom-2">
+                <!--STEP 2: Content goes here -->
+                <h3><strong>Overview:</strong></h3>
+                Gear Switch Race 3D is a casual game that uses drawing and gestures to control a car. The player can
+                draw gestures in the drawing zone and the system recognizes it and shifts gears accordingly. There are
+                hills and slopes along the path, the pair must switch gears at the right time to maintain their speed
+                and defeat the enemy. Their boosters along the path to increase the player speed. Once the player
+                reaches the end the system besides the amount of boost that they will get on the multiplier ramp based
+                on their current speed.
+                <h3><strong>Roles:</strong></h3>
+
+                <p>I made all the UI and the meshes for the roads upon which the players get to drive their cars. Other
+                  than that I also wrote the entire Gesture recognition system which is crucial in switching gears. The
+                  gesture system also involves a confidence level where in the user is only able to switch gears when
+                  the gesture system things that the drawn pattern is close to the database.</p>
+
+                <p>The Following SDKs were integrated by me in this project</p>
+
+                <ul>
+                  <li>Voodoo Analytics</li>
+                  <li>Facebook Analytics</li>
+                  <li>GameAnalytics</li>
+                </ul>
+
+                <h3><strong>Learnings:</strong></h3>
+                Given that the project heavily relies on gestures, I learnt a lot about writing systems to accept user
+                input and match them with an existing database. Writing my own gesture recognition system was also
+                useful in turning something that we all see in every day lives like a stick shift into an casual game.
+                <!-- STEP 3: UPDATE AVAILABILITY -->
+                <h3><strong>Availability :</strong></h3>
+
+                <p>The project is available on the Apple App Store and can be accessed using the button below.</p>
+                <!-- <a href='https://play.google.com/store/apps/details?id=com.DeepMindInteractive.FlameHero3D'><img
+                    alt='Get it on Google Play'
+                    src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
+                    class="storebutton" /></a> -->
+                <a href='https://apps.apple.com/US/app/id1542507180'><img alt='Get it on the App Store'
+                    src='src/img/AppStoreDownloadBadge.png' class="storebutton" /></a>
+              </div>
+
+            </div>
+
+
+            <div class="yb-margin-bottom-2">
+              <div data-uk-grid class="uk-grid-medium uk-child-width-1-2@s ">
+                <div>
+                </div>
+                <div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-3@m yb-section-padding">
+            <div class="yb-sidebar-item">
+              <h6 class="uk-text-bold uk-heading-line"><span>Image Gallery</span></h6>
+              <div data-uk-grid class="uk-child-width-1-1@m uk-child-width-1-2@s uk-child-width-1-1 uk-flex-center ">
+                <div>
+                  <div class="slideshow-container">
+                    <!-- STEP 4: UPDATE SCREENSHOTS -->
+                    <div class="mySlides fade">
+                      <img src="src/img/projects/GearSwitchRace3D/1.png">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="src/img/projects/GearSwitchRace3D/2.png">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="src/img/projects/GearSwitchRace3D/3.png">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+
+                  <div style="text-align:center">
+                    <!-- STEP 5: UPDATE DOT COUNT ON SLIDESHOW GALLERY -->
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+
+                  <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) { slideIndex = 1 }
+                      if (n < 1) { slideIndex = slides.length }
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex - 1].style.display = "block";
+                      setTimeout(showSlides, 2000);
+                      dots[slideIndex - 1].className += " active";
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> <!-- end main section -->
+  <!-- main footer -->
+  <footer class="yb-main-footer-wrapper">
+    <div class="waveHorizontals">
+      <div id="waveHorizontal1" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave1.svg"></div>
+      <div id="waveHorizontal2" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave2.svg"></div>
+      <div id="waveHorizontal3" class="waveHorizontal" data-uk-img data-src="src/img/bg/wave3.svg"></div>
+    </div>
+    <a href="#body-app" class="uk-visible@s yb-totop yb-inner-link" data-uk-totop></a>
+    <div class="yb-main-footer">
+      <div class="uk-container">
+        <div data-uk-grid class="uk-child-width-1-2@s">
+          <div class="uk-margin-remove uk-text-left@s">
+            &copy; 2021 Aman Kapooor
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- end main footer -->
+
+  <!-- js -->
+  <script src="src/app/js/plugins.min.js"></script>
+  <script src="src/app/js/app.js"></script>
+  <script>
+    window.onload = function SetLooksOnLoad() {
+      let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (matched) {
+        document.getElementById("DarkModeToggle").textContent = "☀️";
+        $('body').addClass('yb-dark-skin');
+        $('body').addClass('uk-light');
+      }
+      else {
+        document.getElementById("DarkModeToggle").textContent = "🌙";
+      }
+    }
+    function ChangeLooks() {
+      document.getElementById("body-app").classList.toggle("yb-dark-skin");
+      document.getElementById("body-app").classList.toggle("uk-light");
+      if (document.getElementById("DarkModeToggle").textContent.toString() == '☀️') {
+        document.getElementById("DarkModeToggle").textContent = "🌙";
+      }
+      else if (document.getElementById("DarkModeToggle").textContent.toString() == '🌙') {
+        document.getElementById("DarkModeToggle").textContent = "☀️";
+      }
+    }
+  </script>
+</body>
+
+</html>
