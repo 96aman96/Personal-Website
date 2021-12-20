@@ -326,6 +326,7 @@ body {
   top: 0;
   width: 50%;
   height: 100%;
+  object-position:center;
 }
 
 @media (max-width: 959px) {

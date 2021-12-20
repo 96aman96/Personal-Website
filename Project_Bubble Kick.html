@@ -3,7 +3,7 @@
 
 <head>
   <title>
-    Gear Switch Race 3D - Aman Kapoor
+    Bubble Kick - Aman Kapoor
   </title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -94,7 +94,7 @@
           <div class="uk-width-2-3@m yb-section-padding">
             <h1 class="yb-section-title">
               <!-- StEP 1 B : UPDATE TITLE HERE AS WELL -->
-              Gear Switch Race 3D
+              Bubble Kick
             </h1>
             <!-- <div>
               <img src="src/img/blog/01.jpg" alt="" class="yb-img-featured " />
@@ -103,20 +103,19 @@
               <div class="yb-blog-content yb-margin-bottom-2">
                 <!--STEP 2: Content goes here -->
                 <h3><strong>Overview:</strong></h3>
-                Gear Switch Race 3D is a casual game that uses drawing and gestures to control a car. The player can
-                draw gestures in the drawing zone and the system recognizes it and shifts gears accordingly. There are
-                hills and slopes along the path, the pair must switch gears at the right time to maintain their speed
-                and defeat the enemy. Their boosters along the path to increase the player speed. Once the player
-                reaches the end the system besides the amount of boost that they will get on the multiplier ramp based
-                on their current speed.
+                Bubble Kick is a game that I worked on and submitted for the Voodoo 2021 Fall Competetion. The theme of
+                the competetion was balls.
+                The objective of the game is to use your gun to shoot balls at the zombies. The balls stick to the
+                enemies and once an enemy is covered in balls, the balls combine to form a bubble which immobilizes the
+                enemy. The player can then kick those enemies into the water.
                 <h3><strong>Roles:</strong></h3>
 
-                <p>I made all the UI and the meshes for the roads upon which the players get to drive their cars. Other
-                  than that I also wrote the entire Gesture recognition system which is crucial in switching gears. The
-                  gesture system also involves a confidence level where in the user is only able to switch gears when
-                  the gesture system things that the drawn pattern is close to the database.</p>
+                <p>All levels for the game were designed by me. I wrote the code for the entire game, including a
+                  modular level generator which takes a 25x25 pixel image and converts that into a level map with colors
+                  assigned for enemies, spawn points, bridges etc. The gun used was modelled by me in Blender and I also
+                  wrote the object pooling system for the bullets. </p>
 
-                <p>The Following SDKs were integrated by me in this project</p>
+                <p>The project includes the following external SDKs which were integrated by me</p>
 
                 <ul>
                   <li>Voodoo Analytics</li>
@@ -125,19 +124,18 @@
                 </ul>
 
                 <h3><strong>Learnings:</strong></h3>
-                Given that the project heavily relies on gestures, I learnt a lot about writing systems to accept user
-                input and match them with an existing database. Writing my own gesture recognition system was also
-                useful in turning something that we all see in every day lives like a stick shift into an casual game.
+                The project was a great learning experience as I got to write my own level map generator and I got to
+                work with multiple AI enemy agents. The project also helped me familiarise myself with object pooling in
+                Unity3D.
+
                 <!-- STEP 3: UPDATE AVAILABILITY -->
                 <h3><strong>Availability :</strong></h3>
 
-                <p>The project is available on the Apple App Store and can be accessed using the button below.</p>
-                <!-- <a href='https://play.google.com/store/apps/details?id=com.DeepMindInteractive.FlameHero3D'><img
+                <p>The project is available on the Google Play Store and can be accessed using the button below.</p>
+                <a href='https://play.google.com/store/apps/details?id=com.DeepMindInteractive.BubbleKick'><img
                     alt='Get it on Google Play'
                     src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-                    class="storebutton" /></a> -->
-                <a href='https://apps.apple.com/US/app/id1542507180'><img alt='Get it on the App Store'
-                    src='src/img/AppStoreDownloadBadge.png' class="storebutton" /></a>
+                    class="storebutton" /></a>
               </div>
 
             </div>
@@ -160,13 +158,19 @@
                   <div class="slideshow-container">
                     <!-- STEP 4: UPDATE SCREENSHOTS -->
                     <div class="mySlides fade">
-                      <img src="src/img/projects/GearSwitchRace3D/1.jpg">
+                      <img src="src/img/projects/BubbleKick/1.jpg">
                     </div>
                     <div class="mySlides fade">
-                      <img src="src/img/projects/GearSwitchRace3D/2.jpg">
+                      <img src="src/img/projects/BubbleKick/2.jpg">
                     </div>
                     <div class="mySlides fade">
-                      <img src="src/img/projects/GearSwitchRace3D/3.jpg">
+                      <img src="src/img/projects/BubbleKick/3.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="src/img/projects/BubbleKick/4.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="src/img/projects/BubbleKick/5.jpg">
                     </div>
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -178,6 +182,8 @@
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
                   </div>
 
                   <script>
