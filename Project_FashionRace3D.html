@@ -24,62 +24,60 @@
       <div data-uk-spinner></div>
     </div>
   </div><!-- end page loader -->
-  <!-- main header -->
-  <header class="yb-main-header" id="main-header">
-    <!-- main menu -->
-    <nav class="yb-main-menu " id="main-menu">
-      <div class="uk-container" data-uk-navbar>
-        <div class="uk-navbar-left">
-          <a class="yb-logo uk-navbar-item uk-logo" onclick="ChangeLooks()" id="DarkModeToggle"><span>🌙</span></a>
+  <!-- main menu -->
+  <nav class="yb-main-menu " id="main-menu">
+    <div class="uk-container" data-uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="yb-logo uk-navbar-item uk-logo" onclick="ChangeLooks()" id="DarkModeToggle"><span>🌙</span></a>
+      </div>
+      <div class="uk-navbar-right uk-hidden@m">
+        <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
+          <span data-uk-navbar-toggle-icon class="yb-icon-menu"></span>
+          <span data-uk-icon="close" class="yb-icon-close"></span>
+        </a>
+      </div>
+      <div class="yb-menu-toggle-wrapper" id="menucollapse">
+        <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 79 ">
+            <li>
+              <a href="https://amankapoor.xyz/"> Home </a>
+            </li>
+            <li>
+              <a href="https://amankapoor.xyz/#about"> About</a>
+            </li>
+            <li>
+              <a href="https://amankapoor.xyz/#resume"> Resume </a>
+            </li>
+            <li>
+              <a href="https://amankapoor.xyz/#portfolio"> Portfolio </a>
+            </li>
+            <li>
+              <a href="https://amankapoor.xyz/#contact"> Contact </a>
+            </li>
+          </ul>
         </div>
-        <div class="uk-navbar-right uk-hidden@m">
-          <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
-            <span data-uk-navbar-toggle-icon class="yb-icon-menu"></span>
-            <span data-uk-icon="close" class="yb-icon-close"></span>
-          </a>
-        </div>
-        <div class="yb-menu-toggle-wrapper" id="menucollapse">
-          <div class="uk-navbar-center">
-            <ul class="uk-navbar-nav" data-uk-scrollspy-nav="closest: li; scroll: false; offset: 79 ">
-              <li>
-                <a class="yb-inner-link" href="#home"> Home </a>
-              </li>
-              <li>
-                <a class="yb-inner-link" href="#about"> About</a>
-              </li>
-              <li>
-                <a class="yb-inner-link" href="#resume"> Resume </a>
-              </li>
-              <li>
-                <a class="yb-inner-link" href="#portfolio"> Portfolio </a>
-              </li>
-              <li>
-                <a class="yb-inner-link" href="#contact"> Contact </a>
-              </li>
-            </ul>
-          </div>
-          <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav yb-social-icons">
-              <li>
-                <a href="https://www.github.com/96aman96" target="_blank">
-                  <span class="uk-icon " data-uk-icon="icon: github"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/-aman-kapoor" target="_blank">
-                  <span class="uk-icon" data-uk-icon="icon: linkedin"></span>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/DropAPiano" target="_blank">
-                  <span class="uk-icon" data-uk-icon="icon: twitter"></span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav yb-social-icons">
+            <li>
+              <a href="https://www.github.com/96aman96" target="_blank">
+                <span class="uk-icon " data-uk-icon="icon: github"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/-aman-kapoor" target="_blank">
+                <span class="uk-icon" data-uk-icon="icon: linkedin"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/DropAPiano" target="_blank">
+                <span class="uk-icon" data-uk-icon="icon: twitter"></span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav><!-- end main menu -->
+    </div>
+  </nav><!-- end main menu -->
   </header><!-- end main header -->
   <!-- main section -->
   <main class="yb-main-content">
