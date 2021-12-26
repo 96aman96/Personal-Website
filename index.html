@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
   <link rel="stylesheet" href="src/app/css/uikit-custom.min.css" />
   <link rel="stylesheet" href="src/app/css/app.css" />
+  <link rel="stylesheet" href="src/app/css/github-calendar.css" />
 </head>
 
-<body id="body-app">
+<body id="body-app" class="yb-dark yb-dark-skin uk-light">
   <script src="src/app/js/plugins.min.js"></script>
   <script src="src/app/js/app.js"></script>
   <!-- class="yb-dark-skin uk-light" -->
@@ -23,7 +24,7 @@
   <div id="pageloader" class="yb-pageloader-wrapper">
     <div class="uk-position-center  uk-text-center">
       <div data-uk-spinner></div>
-    </div>
+    </div>\
   </div><!-- end page loader -->
   <!-- main header -->
 
@@ -62,7 +63,7 @@
     <nav class="yb-main-menu " id="main-menu">
       <div class="uk-container" data-uk-navbar>
         <div class="uk-navbar-left">
-          <a class="yb-logo uk-navbar-item uk-logo" onclick="ChangeLooks()" id="DarkModeToggle"><span>🌙</span></a>
+          <a class="yb-logo uk-navbar-item uk-logo" onclick="ChangeLooks()" id="DarkModeToggle"><span>☀️</span></a>
         </div>
         <div class="uk-navbar-right uk-hidden@m">
           <a class="uk-navbar-toggle" href="#" id="btn-menu-toggle">
@@ -376,6 +377,9 @@
                       <h5 class="yb-box-circle-title">Swift</h5>
                     </div>
                   </div>
+                </div>
+                <h4 class="yb-section-title">GitHub Contribution Graph</h4>
+                <div class="calendar">
                 </div>
                 <div data-uk-grid class="uk-child-width-1-2">
                   <div>
@@ -1162,24 +1166,30 @@
       <div class="uk-container">
         <div data-uk-grid class="uk-child-width-1-2@s">
           <div class="uk-margin-remove uk-text-left@s">
-            &copy; 2021 Aman Kapooor
+            Made with ❤️ and ☕️ by Aman -aman-kapoor
           </div>
         </div>
       </div>
     </div>
   </footer><!-- end main footer -->
+  <script src="src/app/js/github-contributions.js"></script>
   <script>
-    window.onload = function SetLooksOnLoad() {
-      let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (matched) {
-        document.getElementById("DarkModeToggle").textContent = "☀️";
-        $('body').addClass('yb-dark-skin');
-        $('body').addClass('uk-light');
-      }
-      else {
-        document.getElementById("DarkModeToggle").textContent = "🌙";
-      }
-    }
+    GitHubCalendar(".calendar", "your-username");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "96aman96", { responsive: true });
+  </script>
+  <script>
+    // window.onload = function SetLooksOnLoad() {
+    //   let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    //   if (matched) {
+    //     document.getElementById("DarkModeToggle").textContent = "☀️";
+    //     $('body').addClass('yb-dark-skin');
+    //     $('body').addClass('uk-light');
+    //   }
+    //   else {
+    //     document.getElementById("DarkModeToggle").textContent = "🌙";
+    //   }
+    // }
     function ChangeLooks() {
       document.getElementById("body-app").classList.toggle("yb-dark-skin");
       document.getElementById("body-app").classList.toggle("uk-light");
